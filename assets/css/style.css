@@ -20,6 +20,49 @@
     -webkit-padding-end: 0px;
 }
 
+p {
+    text-align: left;
+}
+
+a {
+    cursor: pointer;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+/* Color Scheme */
+.colorBgDark1 {
+    background-color: rgba(0,0,40,.9);
+    color: #eee;
+
+}
+.colorBgDark2 {
+    background-color: rgba(20,0,60,.9);
+    color: #eee;
+}
+.colorBgDark3 {
+    background-color: rgba(40,0,70,.9);
+    color: #eee;
+}
+.colorBgLight1 {
+    background-color: rgba(200, 215 ,255,.9);
+    color: #333;
+}
+.colorBgLight2 {
+    background-color: rgba(175,200,255,.9);
+    color: #333;
+}
+
+.colorBgTransparent1 {
+    background-color: rgba(256,256,256,.9);
+}
+
 
 /* General styles*/
 
@@ -37,41 +80,80 @@ hr {
     margin-bottom: 80px;
 }
 
-a.button:hover {
+/* button */
+input[type="submit"],
+button:not(.navbar-toggle){
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: 0.125em;
+    text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    /*font-size: 0.75rem;
+    max-width: 20rem;*/
+    height: 3.75em;
+    line-height: 3.75em;
+    border-radius: 3.75em;
+    padding: 0 2.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
-p {
-    text-align: left;
+input[type="submit"],
+button{
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover,
+button:hover,
+.btn:hover{
+    box-shadow: inset 0 0 0 2px #eee;
+    color: #eee;
+}
+
+input[type="submit"],
+button:not(.navbar-toggle){
+    border: 1px solid #1D2E26;
+    margin: 1rem auto;
+    background-color: rgba(20,0,60,.9);
+    color: #eee;
 }
 
 /* Header styles
 */
 
 .navbar {
-    background-color: rgba(256,256,256,.9);
     min-height: 60px;
 }
 
-#navbar-collapse-1 {
-    border: 0px;
-    border-color: transparent;
+#navbar-collapse-1 a:hover {
+        color: #eee;
 }
 
 .navbar-brand img {
+    position: fixed;
+    top: 10px;
     width: 4rem;
-    background: radial-gradient(circle, yellow 0%, transparent 80%);
+    background: radial-gradient(circle, white 50%, transparent 80%);
 }
 
 .navbar-default {
     border: none;
 }
 
-.navbar-toggle {
-    background-color: rgba(256,256,256,.9);
-}
-
-a:hover { color: red !important; }
+navbarID a:hover { color: black; }
 
 li.a:hover {
     border-color: #1D2E26;
@@ -85,46 +167,69 @@ h1, .centerText, li, .details {
 }
 
 /*Portfolio Styles*/
+#findSimilarImage {
+    border: 10px solid rgba(40,0,70,.9);
+    margin-top: -8.2rem;
+}
+
+#maintenanceLoggerImage {
+    border: 10px solid rgba(0,0,40,.9);
+    margin-top: -8.1rem;
+}
+
+#babyReadyImage {
+    border: 10px solid rgba(20,0,60,.9);
+    margin-top: -8rem;
+}
+
+#findSimilarImage,
+#maintenanceLoggerImage,
+#babyReadyImage{
+    display: none;
+}
 
 .portfolioPadding {
     padding: 0 10rem;
 } 
 
-.portfolio {
+#portfolio .content {
+    width: 100% !important;
+
+    overflow:hidden;
+    /*
     clear: both;
     color: #fff;
     margin-top: 8rem;
-    text-align: center;
+    text-align: center;*/
 }
 
-.portfolio h2{
+#portfolio h2{
     color: black;
 }
 
-.portfolio .box {
+#portfolio .box {
     height: 40rem;
     padding-top: 8rem;
     position: relative;
     border: 1px solid rgba(0,0,0,0);
 }
 
-.portfolio .box h3 {
+#portfolio .box h3 {
     min-height: 6rem;
     margin-top: -4rem;
 }
 
-.portfolio .box .description {
+#portfolio .box .description {
     min-height: 28rem;
 }
 
-.portfolio .shortBox {
+#portfolio .shortBox {
     height: 12rem;
     width: 100%;
 }
 
-.portfolio .info {
+#portfolio .info {
     text-align: center;
-    min-height: 36rem;
     padding: 1rem;
     width: 100%;
 }
@@ -132,18 +237,6 @@ h1, .centerText, li, .details {
 .screenshot {
     max-height: 60rem;
     width: 90%;
-}
-
-#findSimilar {
-    background: rgba(79, 0, 103, 0.9);
-}
-
-#maintenanceLogger {
-    background: rgba(49, 0, 64, 0.9);
-}
-
-#babyReady {
-    background: rgba(29, 0, 38, 0.9);
 }
 
 .icons img {
@@ -162,51 +255,14 @@ i.fa-close {
 
 }
 
-#findSimilarImage {
-    border: 10px solid rgba(79, 0, 103, 0.9);
-    margin-top: -8.2rem;
-}
-
-#maintenanceLoggerImage {
-    border: 10px solid rgba(49, 0, 64, 0.9);
-    margin-top: -8.1rem;
-}
-
-#babyReadyImage {
-    border: 10px solid rgba(29, 0, 38, 0.9);
-    margin-top: -8rem;
-}
-
-#noteKeeperImage {
-    border: 10px solid rgba(59, 0, 77, 0.9);
-    margin-top: -8.3rem;
-}
-
-#findSimilarImage,
-#maintenanceLoggerImage,
-#babyReadyImage,
-#noteKeeperImage {
-    display: none;
-}
-
 .details {
-    padding: 0 10rem;
+    padding: 0 2rem;
 }
 
 .details p {
     color: #444;
     margin-top: 7rem;
     line-height: 1.37;
-}
-
-.details .btn,
-input[type="submit"],
-button:not(.navbar-toggle),
-    .button{
-    background-color: #fff;
-    border: 1px solid #1D2E26;
-    color: #1D2E26;
-    margin: 4rem auto;
 }
 
 /*ContactStyles*/
@@ -226,11 +282,6 @@ button:not(.navbar-toggle),
 
 .contactInfo a {
     color: #608976;
-}
-
-a:hover {
-    color: red;
-    text-decoration: none;
 }
 
 contactInfo .fa {
@@ -354,7 +405,7 @@ img {
 /* Responsive styles*/
 
 @media only screen and (max-width: 1460px) {
-    .portfolio .box {
+    #portfolio .box {
         height: 40rem;
     }
     .introduction img {
@@ -363,31 +414,35 @@ img {
 }
 
 @media only screen and (max-width: 1200px) {
-    .portfolio .box {
+    #portfolio .box {
         height: 48rem;
     }
-    .portfolio .box h2 {
+    #portfolio .box h2 {
         min-height: 10rem;
         margin-top: -4rem;
     }
-    .portfolio .box .description {
+    #portfolio .box .description {
         min-height: 18rem;
     }
 }
 
 @media only screen and (max-width: 989px) {
-    .portfolio .box {
+    #portfolio .box {
         height: 30rem;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .portfolio .box {
+
+@media only screen and (max-width: 767px) {
+    #portfolio .box {
         height: 35rem;
     }
     #navbar-collapse-1 {
+        border: 0px;
+        border-color: transparent;
+        background-color: rgba(20,0,60,.9);
+        color: #eee;
         margin: auto;
-        background-color: white;
         position: absolute;
         top: 0;
         width: 150px;
@@ -397,7 +452,7 @@ img {
     .navbar{
         background-color: transparent;
     }
-    .button.big, #submit, li {
+    #submit, li {
         font-size: 1.5rem;
         max-width: 90%;
         width: 90%;
@@ -411,7 +466,7 @@ img {
 }
 
 @media only screen and (max-width: 480px) {
-    .portfolio .box {
+    #portfolio .box {
         height: 40rem;
     }
     .icons img {

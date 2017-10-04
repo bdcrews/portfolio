@@ -9,28 +9,29 @@
    		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
     	<link rel="stylesheet" href="assets/css/style.css" />
     	<link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.1/animate.css">
+    	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
 	</head>
 	<body>
 
     <header>
-        <nav id="navbarID" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav id="navbarID" class="navbar navbar-fixed-top colorBgDark2" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed colorBgTransparent1" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
 									
-                    <a class="navbar-brand" href="#"><img src="images/home.png"></span></a>
+                    <a class="navbar-brand"><img src="images/home.png"></span></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="menu_link aboutLink" data-toggle="collapse" data-target="#navbar-collapse-1" href="#">About</a></li>
-                        <li><a class="menu_link worksLink" data-toggle="collapse" data-target="#navbar-collapse-1" href="#">Portfolio</a></li>
-                        <li><a class="menu_link resumeLink" data-toggle="collapse" data-target="#navbar-collapse-1" href="#" target="_blank">Résumé</a></li>
-                        <li><a class="menu_link contactLink" data-toggle="collapse" data-target="#navbar-collapse-1" href="#"><span style="color: #1D2E26">Contact</span></a></li>
+                        <li><a class="menu_link aboutLink" data-toggle="collapse" data-target="#navbar-collapse-1">About</a></li>
+                        <li><a class="menu_link portfolioLink" data-toggle="collapse" data-target="#navbar-collapse-1">Portfolio</a></li>
+                        <li><a class="menu_link resumeLink" data-toggle="collapse" data-target="#navbar-collapse-1" target="_blank">Résumé</a></li>
+                        <li><a class="menu_link contactLink" data-toggle="collapse" data-target="#navbar-collapse-1">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,12 +39,12 @@
     </header>
 
 	<!-- intro -->
-	<section id="top" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+	<section id="top" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right colorBgLight2">
 		<div class="content">
 			<h1>Hi, I'm Brandon</h1>
 			<p class="centerText">I am a Web Delvelopwer based in Phoenix Arizona.</p>
 			<ul class="actions vertical">
-				<li><a href="#" class="aboutLink button big wide smooth-scroll-middle">Get Started</a></li>
+				<li><button class="aboutLink btn btn-md">Get Started</button></li>
 			</ul>
 		</div>
 		<div class="image">
@@ -52,13 +53,13 @@
 	</section>
 
 	<!-- about me -->
-	<section id="about" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in fullscreen">
+	<section id="about" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in fullscreen colorBgLight1">
 		<div class="content">
 			<h2>About Me</h2>
 			<p>I am a web developer and recent graduate of the Full Stack Web Development Bootcamp at Thinkful.  I have an extensive background in software, and am skilled in multiple software languages. I've always love coding.  Solving problems and seeing ideas come to life on the page is exciting to me.  I enjoy finding  higher order functions, finding and learning awesome libraries or frameworks, and getting front and back ends to play nicely. </p>
 			<p>When I'm not coding, I'm often found enjoying a good book, hiking in the nearby mountains, or upside down doing a headstand.  </p>
 			<ul class="actions vertical">
-				<li><a href="#" class="worksLink button big wide smooth-scroll-middle">View Works</a></li>
+				<li><button class="portfolioLink btn btn-md">View Works</button></li>
 			</ul>
 		</div>
 		<div class="image">
@@ -66,192 +67,200 @@
 		</div>
 	</section>
 
-	<section class="portfolio">
-	    <div class="portfolioPadding bottomSpacer wow fadeInUp container-fluid">
-	        <h2 id="works">Sample Projects</h2>
-	        <!--Baby Ready-->
-	        <div id="babyReady" class="box hvr-trim col-md-4">
-	            <div class="info">
-	                <h3>Baby Ready</h3>
-	                <div class="description">
-	                    <p>Baby Ready is a full stack app that helps moms-to-be stay organized.  It allows the user to store and tract important stats or journal entries related to pregnancy.  This information can be accessed by the user in one convenient place.</p>
-	                    <p>Skills: HTML5, CSS3, Bootstrap, React, NodeJS, MondgoDB, JS</p>
-	                </div>
-	            </div>
-	        	<div class="hvr-icon-hang" ></div>
-	        </div>
-	        <!-- Maintenance Logger -->
-	        <div id="maintenanceLogger" class="box hvr-trim col-md-4">
-	            <div class="info">
-	                <h3>Maintenance Logger</h3>
-	                <div class="description">
-	                    <p>A MEAN stack app where user can track repair and status on equipment. Users can use the tool help efficiency with maintenance work by increasing communication between maintainers. Records (part name, status, etc.), can be added, updated, sorted, or deleted. The user can filter the results based on fields in the maintenance record to return a list of records.</p>
-	                    <p>Skills: HTML5, CSS3, jQuery, NodeJS, AJAX</p>
-	                </div>
-	            </div>
-	        	<div class="hvr-icon-hang" ></div>
-	        </div>
-	        <!--Find Similar -->
-	        <div id="findSimilar" class="box hvr-trim col-md-4">
-	            <div class="info">
-	                <h3>Find Similar</h3>
-	                <div class="description">
-	                    <p>Find Similar gives recommendations and helps you discover new music, movies, TV shows, books, authors and games, based on what you like. Just input a favorite of yours and the app will give a list of similar items. This list can be expanded to show a synopsis and video. The output can also be easily filtered by type (music, movies, etc.).</p>
-	                    <p>Skills: HTML5, CSS3, jQuery, JS</p>
-	                </div>
-	            </div>
-	        	<div class="hvr-icon-hang" ></div>
-	        </div>
-	    </div>
-	    <!-- Baby Ready -->
-	    <div class="container-fluid text-center portfolioPadding">
-	        <div id="babyReadyImage">
-	            <div class="row">
-	                <div id="babyReadyClose" class="closeDetails"><i class="fa fa-2x fa-close"></i></div>
-	            </div>
-	            <div class="row">
-	                <div class="col-md-6">
-	                    <img class="screenshot" src="images/gallery/fulls/01.jpg" alt="">
-	                </div>
-	                <div class="col-md-6 details">
-	                    <div>
-	                        <p>Baby Ready is a full stack app that helps moms-to-be stay organized.  It allows the user to store and tract important stats or journal entries related to pregnancy.  This information can be accessed by the user in one convenient place.</p>
-	                        <h3>SKILLS</h3>
-	                    </div>
-	                    <hr>
-	                    <div class="row">
-                            <div class="col-xs-6">
-                                <div title="HTML5" class="icons"><img src="images/html.png" alt="HTML5"></div>
-                            </div>
-                            <div class="col-xs-6">
-                                <div title="CSS3" class="icons"><img src="images/css.png" alt="CSS3"></div>
-                            </div>
-                            <div class="col-xs-6">
-                                <div title="jQuery" class="icons"><img src="images/jquery-icon.png" alt="jQuery"></div>
-                            </div>
-                            <div class="col-xs-6">
-                                <div title="JavaScript" class="icons"><img src="images/javascript.png" alt="JavaScript"></div>
-                            </div>
-	                    </div>
-	                    <p class="centerText">
-	                        <a target="blank" href="https://github.com/bdcrews/baby-ready">
-	                            <button class="btn btn-lg">Code</button>
-	                        </a>
-	                        <a target="blank" href="https://bookkeeper-ape-63565.netlify.com/">
-	                            <button class="btn btn-lg">Demo</button>
-	                        </a>
-	                    </p>
-	                </div>
-	                <!-- /.details -->
-	            </div>
-	            <!-- ./row -->
-	        </div>
-	        <!-- /#babyReadyImage -->
-	    </div>
-	    <!-- Maintenance Logger -->
-	    <div class="container-fluid text-center portfolioPadding">
-	        <div id="maintenanceLoggerImage">
-	            <div class="row">
-	                <div id="maintenanceLoggerClose" class="closeDetails"><i class="fa fa-2x fa-close"></i></div>
-	            </div>
-	            <div class="row">
-	                <div class="col-md-6">
-	                    <img class="screenshot" src="images/gallery/fulls/02.jpg" alt="">
-	                </div>
-	                <div class="col-md-6 details">
-	                    <div>
-	                        <p>A MEAN stack app where user can track repair and status on equipment. Users can use the tool help efficiency with maintenance work by increasing communication between maintainers. Records (part name, status, etc.), can be added, updated, sorted, or deleted. The user can filter the results based on fields in the maintenance record to return a list of records.</p>
-	                        <h3>SKILLS</h3>
-	                    </div>
-	                    <hr>
-	                    <div class="row">
-                            <div class="col-xs-4">
-                                <div title="HTML5" class="icons"><img src="images/html.png" alt="HTML5"></div>
-                            </div>
-                            <div class="col-xs-4">
-                                <div title="CSS3" class="icons"><img src="images/css.png" alt="CSS3"></div>
-                            </div>
-                            <div class="col-xs-4">
-                                <div title="JavaScript" class="icons"><img src="images/javascript.png" alt="JavaScript"></div>
-                            </div>
-                            <div class="col-xs-4">
-                                <div title="jQuery" class="icons"><img src="images/jquery-icon.png" alt="jQuery"></div>
-                            </div>
-                            <div class="col-xs-4">
-                                <div title="NodeJS" class="icons"><img src="images/nodejs.svg" alt="NodeJS"></div>
-                            </div>
-                            <div class="col-xs-4">
-                                <div title="AJAX" class="icons"><img src="images/ajax.png" alt="AJAS"></div>
-                            </div>
-	                    </div>
-	                    <p class="centerText">
-	                        <a target="blank" href="https://github.com/bdcrews/maintenance-logger">
-	                            <button class="btn btn-lg ">Code</button>
-	                        </a>
-	                        <a target="blank" href="https://dry-tor-47578.herokuapp.com/">
-	                            <button class="btn btn-lg">Demo</button>
-	                        </a>
-	                    </p>
-	                </div>
-	                <!-- /.details -->
-	            </div>
-	            <!-- ./row -->
-	        </div>
-	        <!-- /#maintenanceLoggerImage -->
-	    </div>
-	    <!--Find Similar -->
-	    <div class="container-fluid text-center portfolioPadding">
-	        <div id="findSimilarImage">
-	            <div class="row">
-	                <div id="findSimilarClose" class="closeDetails"><i class="fa fa-2x fa-close"></i></div>
-	            </div>
-	            <div class="row">
-	                <div class="col-md-6">
-	                    <img class="screenshot" src="images/gallery/fulls/03.jpg" alt="">
-	                </div>
-	                <div class="col-md-6 details">
-	                    <div>
-	                        <p>Find Similar gives recommendations and helps you discover new music, movies, TV shows, books, authors and games, based on what you like. Just input a favorite of yours and the app will give a list of similar items. This list can be expanded to show a synopsis and video. The output can also be easily filtered by type (music, movies, etc.).</p>
-	                        <h3>SKILLS</h3>
-	                    </div>
-	                    <hr>
-	                    <div class="row">
-                            <div title="HTML5" class="col-xs-4">
-                                <div class="icons"><img src="images/html.png" alt="HTML5"></div>
-                            </div>
-                            <div title="CSS3" class="col-xs-4">
-                                <div class="icons"><img src="images/css.png" alt="CSS3"></div>
-                            </div>
-                            <div title="JavaScript" class="col-xs-4">
-                                <div class="icons"><img src="images/javascript.png" alt="JavaScript"></div>
-                            </div>
-                            <div title="jQuery" class="col-xs-4">
-                                <div class="icons"><img src="images/jquery-icon.png" alt="jQuery"></div>
-                            </div>
-                            <div title="NodeJS" class="col-xs-4">
-                                <div class="icons"><img src="images/nodejs.svg" alt="NodeJS"></div>
-                            </div>
-                            <div title="Sockets.io" class="col-xs-4">
-                                <div class="icons"><img src="images/socket-io.svg" alt="Sockets.io"></div>
-                            </div>
-                            <div title="MongoDB" class="col-xs-offset-4 col-xs-4">
-                                <div class="icons"><img src="images/mongodb.png" alt="MongoDB"></div>
-                            </div>
-	                    </div>
-	                    <p class="centerText">
-	                        <a target="blank" href="https://github.com/bdcrews/FindSimilar">
-	                            <button class="btn btn-lg">Code</button>
-	                        </a>
-	                        <a target="blank" href="https://bdcrews.github.io/FindSimilar/">
-	                            <button class="btn btn-lg">Demo</button>
-	                        </a>
-	                    </p>
-	                </div>
-	                <!-- /.details -->
-	            </div>
-	            <!-- ./row -->
-	        </div>
-	    </div>
+	<section id="portfolio" class="banner style5 fullscreen content-align-center onload-content-fade-in">
+		<div class="content">
+		    <div class="portfolioPadding bottomSpacer wow fadeInUp container-fluid">
+		        <h2>Sample Projects</h2>
+		        <!--Baby Ready-->
+		        <div id="babyReady" class="box hvr-trim col-md-4 colorBgDark1">
+		            <div class="info">
+		                <h3>Baby Ready</h3>
+		                <div class="description">
+		                    <p>Baby Ready is a full stack app that helps moms-to-be stay organized.  It allows the user to store and tract important stats or journal entries related to pregnancy.  This information can be accessed by the user in one convenient place.</p>
+		                    <p>Skills: HTML5, CSS3, Bootstrap, React, NodeJS, MondgoDB, JS</p>
+		                </div>
+		            </div>
+		        	<div class="hvr-icon-hang" ></div>
+		        </div>
+		        <!-- Maintenance Logger -->
+		        <div id="maintenanceLogger" class="box hvr-trim col-md-4 colorBgDark2">
+		            <div class="info">
+		                <h3>Maintenance Logger</h3>
+		                <div class="description">
+		                    <p>A MEAN stack app where user can track repair and status on equipment. Users can use the tool help efficiency with maintenance work by increasing communication between maintainers. Records (part name, status, etc.), can be added, updated, sorted, or deleted. The user can filter the results based on fields in the maintenance record to return a list of records.</p>
+		                    <p>Skills: HTML5, CSS3, jQuery, NodeJS, AJAX</p>
+		                </div>
+		            </div>
+		        	<div class="hvr-icon-hang" ></div>
+		        </div>
+		        <!--Find Similar -->
+		        <div id="findSimilar" class="box hvr-trim col-md-4 colorBgDark3">
+		            <div class="info">
+		                <h3>Find Similar</h3>
+		                <div class="description">
+		                    <p>Find Similar gives recommendations and helps you discover new music, movies, TV shows, books, authors and games, based on what you like. Just input a favorite of yours and the app will give a list of similar items. This list can be expanded to show a synopsis and video. The output can also be easily filtered by type (music, movies, etc.).</p>
+		                    <p>Skills: HTML5, CSS3, jQuery, JS</p>
+		                </div>
+		            </div>
+		        	<div class="hvr-icon-hang" ></div>
+		        </div>
+		    </div>
+		    <!-- Baby Ready -->
+		    <div class="container-fluid text-center portfolioPadding">
+		        <div id="babyReadyImage" class="colorBgTransparent1">
+		            <div class="row">
+		                <div id="babyReadyClose" class="closeDetails"><i class="fa fa-2x fa-close"></i></div>
+		            </div>
+		            <div class="row">
+		                <div class="col-md-6">
+		                    <img class="screenshot" src="images/gallery/fulls/01.jpg" alt="">
+		                </div>
+		                <div class="col-md-6 details">
+		                    <div>
+		                        <p>Baby Ready is a full stack app that helps moms-to-be stay organized.  It allows the user to store and tract important stats or journal entries related to pregnancy.  This information can be accessed by the user in one convenient place.</p>
+		                        <h3>SKILLS</h3>
+		                    </div>
+		                    <hr>
+		                    <div class="row">
+	                            <div class="col-xs-6">
+	                                <div title="HTML5" class="icons"><img src="images/html.png" alt="HTML5"></div>
+	                            </div>
+	                            <div class="col-xs-6">
+	                                <div title="CSS3" class="icons"><img src="images/css.png" alt="CSS3"></div>
+	                            </div>
+	                            <div class="col-xs-6">
+	                                <div title="jQuery" class="icons"><img src="images/jquery-icon.png" alt="jQuery"></div>
+	                            </div>
+	                            <div class="col-xs-6">
+	                                <div title="JavaScript" class="icons"><img src="images/javascript.png" alt="JavaScript"></div>
+	                            </div>
+		                    </div>
+		                    <p class="centerText">
+		                        <a href="https://github.com/bdcrews/baby-ready">
+		                            <button class="btn btn-md">Code</button>
+		                        </a>
+		                        <a href="https://bookkeeper-ape-63565.netlify.com/">
+		                            <button class="btn btn-md">Demo</button>
+		                        </a>
+		                    </p>
+		                </div>
+		                <!-- /.details -->
+		            </div>
+		            <!-- ./row -->
+		        </div>
+		        <!-- /#babyReadyImage -->
+		    </div>
+		    <!-- Maintenance Logger -->
+		    <div class="container-fluid text-center portfolioPadding">
+		        <div id="maintenanceLoggerImage" class="colorBgTransparent1">
+		            <div class="row">
+		                <div id="maintenanceLoggerClose" class="closeDetails"><i class="fa fa-2x fa-close"></i></div>
+		            </div>
+		            <div class="row">
+		                <div class="col-md-6">
+		                    <img class="screenshot" src="images/gallery/fulls/02.jpg" alt="">
+		                </div>
+		                <div class="col-md-6 details">
+		                    <div>
+		                        <p>A MEAN stack app where user can track repair and status on equipment. Users can use the tool help efficiency with maintenance work by increasing communication between maintainers. Records (part name, status, etc.), can be added, updated, sorted, or deleted. The user can filter the results based on fields in the maintenance record to return a list of records.</p>
+		                        <h3>SKILLS</h3>
+		                    </div>
+		                    <hr>
+		                    <div class="row">
+	                            <div class="col-xs-4">
+	                                <div title="HTML5" class="icons"><img src="images/html.png" alt="HTML5"></div>
+	                            </div>
+	                            <div class="col-xs-4">
+	                                <div title="CSS3" class="icons"><img src="images/css.png" alt="CSS3"></div>
+	                            </div>
+	                            <div class="col-xs-4">
+	                                <div title="JavaScript" class="icons"><img src="images/javascript.png" alt="JavaScript"></div>
+	                            </div>
+	                            <div class="col-xs-4">
+	                                <div title="jQuery" class="icons"><img src="images/jquery-icon.png" alt="jQuery"></div>
+	                            </div>
+	                            <div class="col-xs-4">
+	                                <div title="NodeJS" class="icons"><img src="images/nodejs.svg" alt="NodeJS"></div>
+	                            </div>
+	                            <div class="col-xs-4">
+	                                <div title="AJAX" class="icons"><img src="images/ajax.png" alt="AJAS"></div>
+	                            </div>
+		                    </div>
+		                    <p class="centerText">
+		                        <a href="https://github.com/bdcrews/maintenance-logger">
+		                            <button class="btn btn-md ">Code</button>
+		                        </a>
+		                        <a href="https://dry-tor-47578.herokuapp.com/">
+		                            <button class="btn btn-md">Demo</button>
+		                        </a>
+		                    </p>
+		                </div>
+		                <!-- /.details -->
+		            </div>
+		            <!-- ./row -->
+		        </div>
+		        <!-- /#maintenanceLoggerImage -->
+		    </div>
+		    <!--Find Similar -->
+		    <div class="container-fluid text-center portfolioPadding">
+		        <div id="findSimilarImage" class="colorBgTransparent1">
+		            <div class="row">
+		                <div id="findSimilarClose" class="closeDetails"><i class="fa fa-2x fa-close"></i></div>
+		            </div>
+		            <div class="row">
+		                <div class="col-md-6">
+		                    <img class="screenshot" src="images/gallery/fulls/03.jpg" alt="">
+		                </div>
+		                <div class="col-md-6 details">
+		                    <div>
+		                        <p>Find Similar gives recommendations and helps you discover new music, movies, TV shows, books, authors and games, based on what you like. Just input a favorite of yours and the app will give a list of similar items. This list can be expanded to show a synopsis and video. The output can also be easily filtered by type (music, movies, etc.).</p>
+		                        <h3>SKILLS</h3>
+		                    </div>
+		                    <hr>
+		                    <div class="row">
+	                            <div title="HTML5" class="col-xs-4">
+	                                <div class="icons"><img src="images/html.png" alt="HTML5"></div>
+	                            </div>
+	                            <div title="CSS3" class="col-xs-4">
+	                                <div class="icons"><img src="images/css.png" alt="CSS3"></div>
+	                            </div>
+	                            <div title="JavaScript" class="col-xs-4">
+	                                <div class="icons"><img src="images/javascript.png" alt="JavaScript"></div>
+	                            </div>
+	                            <div title="jQuery" class="col-xs-4">
+	                                <div class="icons"><img src="images/jquery-icon.png" alt="jQuery"></div>
+	                            </div>
+	                            <div title="NodeJS" class="col-xs-4">
+	                                <div class="icons"><img src="images/nodejs.svg" alt="NodeJS"></div>
+	                            </div>
+	                            <div title="Sockets.io" class="col-xs-4">
+	                                <div class="icons"><img src="images/socket-io.svg" alt="Sockets.io"></div>
+	                            </div>
+	                            <div title="MongoDB" class="col-xs-offset-4 col-xs-4">
+	                                <div class="icons"><img src="images/mongodb.png" alt="MongoDB"></div>
+	                            </div>
+		                    </div>
+		                    <p class="centerText">
+		                        <a href="https://github.com/bdcrews/FindSimilar">
+		                            <button class="btn btn-md">Code</button>
+		                        </a>
+		                        <a href="https://bdcrews.github.io/FindSimilar/">
+		                            <button class="btn btn-md">Demo</button>
+		                        </a>
+		                    </p>
+		                </div>
+		                <!-- /.details -->
+		            </div>
+		            <!-- ./row -->
+		        </div>
+		    </div>
+			<ul class="actions vertical">
+				<li><button class="contactLink btn btn-md">Contact</button></li>
+			</ul>
+		</div>
+		<div class="image">
+			<img src="images/banner01.jpg" alt="" />
+		</div>
     </section>
 
 
@@ -289,11 +298,11 @@
 	<footer class="wrapper style1 align-center">
 		<div class="inner">
 			<ul class="icons">
-				<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+				<li><a class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 		</div>
@@ -307,7 +316,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
     <script src="assets/js/velocity.min.js"></script>`
-    <script src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script>
+    <script src="assets/js/velocity.ui.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script>new WOW().init();</script>

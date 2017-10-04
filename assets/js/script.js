@@ -14,7 +14,7 @@ $(document).ready(function () {
         show.toggleClass("col-lg-4 col-lg-12");
         showImage.toggle();
         showImage.addClass("animated fadeIn bottomSpacer");
-        $("#works").velocity("scroll", { duration: 1000, offset: -60 });
+        $("#portfolio").velocity("scroll", { duration: 1000 });
     };
 
     //portfolio
@@ -43,33 +43,35 @@ $(document).ready(function () {
 
     //Setting Scrolls
     $(".navbar-brand").click(function () {
-        $("#top").velocity("scroll", { duration: 1000, offset: -60 });
+        $("#top").velocity("scroll", { duration: 1000 });
     });
     $(".aboutLink").click(function () {
-        $("#about").velocity("scroll", { duration: 1000, offset: -60 });
+        $("#about").velocity("scroll", { duration: 1000 });
     });
-    $(".worksLink").click(function () {
-        $("#works").velocity("scroll", { duration: 1000, offset: -60 });
+    $(".portfolioLink").click(function () {
+        $("#portfolio").velocity("scroll", { duration: 1000 });
     });
     $(".contactLink").click(function () {
-        $("form").velocity("scroll", { duration: 1000, offset: -60 });
+        $("#contact").velocity("scroll", { duration: 1000 });
     });
-
-
-    $(".contactLink").click(function () {
-        $("form").velocity("scroll", { duration: 1000, offset: -60 });
+/*
+    $('.nav a').on('click', function(){
+        $('.navbar-toggle').click() //bootstrap 3.x by Richard
     });
+    */
 
     function updateNavBar(){
         if($(window).width()<768) {
             $(".menu_link").attr("data-toggle", "collapse");
             $(".menu_link").attr("data-target", "#navbar-collapse-1");
             $("#about").removeClass("style5").addClass("style1");
+            $("#navbarID").removeClass("navbar-inverse").addClass("navbar-default");
         }
         else {
             $(".menu_link").attr("data-toggle", "");
             $(".menu_link").attr("data-target", "");
             $("#about").removeClass("style1").addClass("style5");
+            $("#navbarID").removeClass("navbar-default").addClass("navbar-inverse");
         }
     };
     updateNavBar();
