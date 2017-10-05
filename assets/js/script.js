@@ -1,6 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip(); 
 
     function showHide(hide, show, showImage) {
         hide.forEach(function (el) {
@@ -54,11 +55,31 @@ $(document).ready(function () {
     $(".contactLink").click(function () {
         $("#contact").velocity("scroll", { duration: 1000 });
     });
-/*
-    $('.nav a').on('click', function(){
-        $('.navbar-toggle').click() //bootstrap 3.x by Richard
+
+
+    // enable submit button
+    function updateForm(){
+        var empty = false;
+        $('form input').each(function() {
+            if ($(this).val() == '') {
+                empty = true;
+            }
+        });
+        
+        if (empty) {
+            $("#submit").attr("data-toggle", "tooltip");
+            $("#submit").attr("title", "Form empty.");
+            $('#submit').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+        } else {
+            $("#submit").removeAttr("data-toggle");
+            $("#submit").removeAttr("title");
+            $('#submit').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+        }
+    }
+    updateForm();
+    $('form input').keyup(function() {
+        updateForm();
     });
-    */
 
     function updateNavBar(){
         if($(window).width()<768) {
