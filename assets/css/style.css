@@ -155,7 +155,9 @@ textarea {
     position: fixed;
     top: 10px;
     width: 4rem;
-    background: radial-gradient(circle, white 50%, transparent 75%);
+    box-shadow: inset 0 0 20px rgba(255,255,255,1);
+    border-radius: 4px;
+    background: radial-gradient(circle, white 30%, transparent 66%);
 }
 
 .navbar-default {
