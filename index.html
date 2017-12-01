@@ -276,21 +276,23 @@
 	<section id="contact" class="spotlight style5 fullscreen orient-center content-align-left image-position-center onscroll-content-fade-in">
 		<div class="content">
 			<h2>Get in touch</h2>
-			<form action="https://formspree.io/bdc1978@gmail.com" method="post" enctype="text/plain">
+			<form id="contactform" action="https://formspree.io/bdc1978@gmail.com" method="post" enctype="text/plain">
 				<div class="field half first">
 					<label for="name">Name</label>
 					<input type="text" name="name" id="name" value="" />
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
-					<input type="email" name="email" id="email" value="" />
+					<input type="email" name="_replyto" id="email" value="" />
 				</div>
 				<div class="field">
 					<label for="message">Message</label>
 					<textarea name="message" id="message" rows="6"></textarea>
 				</div>
+				<input type="hidden" name="_subject" value="Website contact" />
+				<input type="text" name="_gotcha" style="display:none" />
 				<ul class="actions">
-					<li><input type="submit" name="submit" id="submit" value="Send" disabled/></li>
+					<li><input type="submit" value="Send"/></li>
 				</ul>
 			</form>
 		</div>
